@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="head"></div>
+  </body>
+
+  <script>
+    const div = document.createElement("h1");
+
+    console.log(div);
+
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+    div.setAttribute("title", "generated title");
+
+    div.style.backgroundColor = "greeen";
+    div.style.padding = "12px";
+
+    //  1. method
+    // div.innerHTML = "Bobzy the king";
+
+    // same 1 and 2
+
+    // 2. method
+    // const addtext = document.createTextNode("bobzy aur code");
+    // div.appendChild(addtext);
+
+    // document.body.appendChild(div)
+  </script>
+</html>
